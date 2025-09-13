@@ -5,84 +5,89 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Turning Complex Data into Clarity — Dr. Stuti Arya</title>
   <meta name="description" content="Dr. Stuti Arya — PhD medical writer, pharmacovigilance specialist and evidence synthesis consultant." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Inter for headings and body (clean, sans-serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-  :root{
-    --beige:#F6F0EB;
-    --blush:#E8B7B0;
-    --offwhite:#FFFFFF;
-    --sage:#334938;
-    --muted:#6C7A73;
-    --card:#FBFAF9;
-    --dark-bg:#233226;
-  }
-  *{box-sizing:border-box}
-  body{
-    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    margin:0;
-    color:var(--sage);
-    background:linear-gradient(180deg,var(--offwhite),#fbfbfb);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  .container{max-width:980px;margin:0 auto;padding:40px 24px;}
-  .site-hero{background:var(--offwhite);padding:86px 0 60px;text-align:center;border-bottom:1px solid rgba(51,73,56,0.06);}
-  .logo-heading{font-family:'Great Vibes', cursive;font-size:34px;margin:0 0 10px;color:var(--sage);font-weight:400;}
-  .hero-sub{color:var(--muted);max-width:760px;margin:0 auto 20px;font-size:16px}
-  .cta{display:inline-block;background:linear-gradient(90deg,var(--sage), #5a7d5f);color:white;padding:12px 26px;border-radius:28px;text-decoration:none;font-weight:600;box-shadow:0 6px 14px rgba(51,73,56,0.08);}
-  .section-title{font-family:'Great Vibes',cursive;font-size:28px;color:var(--sage);text-align:center;margin:8px 0 12px;}
-  .lead{text-align:center;color:var(--muted);max-width:820px;margin:0 auto 26px}
-  .card{background:var(--card);border-radius:14px;padding:28px}
-  .soft{box-shadow:0 8px 18px rgba(51,73,56,0.04);border:1px solid rgba(51,73,56,0.03)}
-  .three-columns{display:flex;gap:18px;justify-content:space-between;margin-top:20px}
-  .feature{text-align:center;padding:12px;flex:1}
-  .feature .icon{width:56px;height:56px;margin:0 auto 10px;border-radius:999px;background:#fff;display:flex;align-items:center;justify-content:center}
-  .feature h4{margin:6px 0 8px;color:var(--sage);font-weight:600}
-  .feature p{color:var(--muted);font-size:14px}
-  .profile{display:flex;gap:20px;align-items:center;padding:18px}
-  .profile-left{flex:0 0 96px;display:flex;align-items:center;justify-content:center}
-  .initials{width:86px;height:86px;border-radius:999px;background:linear-gradient(180deg,var(--blush),#d99b95);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
-  .profile-right h3{margin:0;color:var(--sage);font-size:20px}
-  .profile-right .muted{color:var(--muted);margin-bottom:8px}
-  .contact-list{list-style:none;padding:0;margin:12px 0 0}
-  .contact-list li{margin:8px 0}
-  .contact-list a{color:var(--sage);text-decoration:none}
-  .grid-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px}
-  .service{padding:20px;border-radius:12px}
-  .service-icon{width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,var(--beige),#f3efe9);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
-  .service h4{margin:0 0 8px;color:var(--sage)}
-  .service p{color:var(--muted)}
-  .portfolio-list{margin-top:16px;display:flex;flex-direction:column;gap:12px}
-  .portfolio-item{padding:18px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfbfb);border:1px solid rgba(51,73,56,0.03)}
-  .p-icon{font-size:24px;margin-bottom:6px}
-  .portfolio-item h4{margin:0 0 6px;color:var(--sage)}
-  .portfolio-item p{color:var(--muted);margin:0 0 8px}
-  .meta{font-size:13px;color:var(--muted)}
-  .publications{margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(90deg,var(--beige),#fff);border:1px solid rgba(51,73,56,0.03)}
-  .publications ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
-  .site-footer{background:var(--dark-bg);color:var(--offwhite);padding:44px 0 60px;margin-top:36px}
-  .section-title.light{color:var(--offwhite)}
-  .lead.light{color:rgba(255,255,255,0.85)}
-  .contact-cards{display:flex;gap:18px;margin-top:18px}
-  .card.dark{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;color:var(--offwhite)}
-  .contact-list.light a{color:var(--offwhite);text-decoration:none}
-  .btn-cta{display:inline-block;padding:12px 18px;border-radius:8px;border:none;background:linear-gradient(90deg,var(--sage),var(--blush));color:white;font-weight:700;text-decoration:none}
-  .footer-note{padding:18px 0;text-align:center;color:rgba(255,255,255,0.6);background:transparent}
-  .small.muted{color:rgba(255,255,255,0.6);font-size:13px}
-  @media(max-width:820px){
-    .three-columns{flex-direction:column}
-    .grid-cards{grid-template-columns:1fr}
-    .contact-cards{flex-direction:column}
-    .profile{flex-direction:column;align-items:flex-start}
-    .profile-left{align-self:center}
-  }
+    :root{
+      --beige:#F6F0EB;
+      --blush:#E8B7B0;
+      --offwhite:#FFFFFF;
+      --sage:#334938;
+      --muted:#6C7A73;
+      --card:#FBFAF9;
+      --dark-bg:#233226;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      margin:0;
+      color:var(--sage);
+      background:linear-gradient(180deg,var(--offwhite),#fbfbfb);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:980px;margin:0 auto;padding:40px 24px;}
+    .site-hero{background:var(--offwhite);padding:76px 0 46px;text-align:center;border-bottom:1px solid rgba(51,73,56,0.06);}
+    .logo-heading{
+      font-family:'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      font-size:30px;
+      margin:0 0 12px;
+      color:var(--sage);
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .hero-sub{color:var(--muted);max-width:760px;margin:0 auto 20px;font-size:16px}
+    .cta{display:inline-block;background:linear-gradient(90deg,var(--sage), #5a7d5f);color:white;padding:12px 26px;border-radius:28px;text-decoration:none;font-weight:600;box-shadow:0 6px 14px rgba(51,73,56,0.08);}
+    .section-title{
+      font-family:'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      font-size:22px;
+      color:var(--sage);
+      text-align:center;margin:8px 0 12px;
+      font-weight:700;
+    }
+    .lead{text-align:center;color:var(--muted);max-width:820px;margin:0 auto 26px}
+    .card{background:var(--card);border-radius:14px;padding:28px}
+    .soft{box-shadow:0 8px 18px rgba(51,73,56,0.04);border:1px solid rgba(51,73,56,0.03)}
+    .three-columns{display:flex;gap:18px;justify-content:space-between;margin-top:20px}
+    .feature{text-align:center;padding:12px;flex:1}
+    .feature .icon{width:56px;height:56px;margin:0 auto 10px;border-radius:999px;background:#fff;display:flex;align-items:center;justify-content:center}
+    .feature h4{margin:6px 0 8px;color:var(--sage);font-weight:700}
+    .feature p{color:var(--muted);font-size:14px}
+    .grid-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px}
+    .service{padding:20px;border-radius:12px}
+    .service-icon{width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,var(--beige),#f3efe9);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+    .service h4{margin:0 0 8px;color:var(--sage);font-weight:700}
+    .service p{color:var(--muted)}
+    .portfolio-list{margin-top:16px;display:flex;flex-direction:column;gap:12px}
+    .portfolio-item{padding:18px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fbfbfb);border:1px solid rgba(51,73,56,0.03)}
+    .p-icon{font-size:20px;margin-bottom:6px}
+    .portfolio-item h4{margin:0 0 6px;color:var(--sage);font-weight:700}
+    .portfolio-item p{color:var(--muted);margin:0 0 8px}
+    .meta{font-size:13px;color:var(--muted)}
+    .publications{margin-top:12px;padding:18px;border-radius:10px;background:linear-gradient(90deg,var(--beige),#fff);border:1px solid rgba(51,73,56,0.03)}
+    .publications ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    .publications li{margin:12px 0}
+    .site-footer{background:var(--dark-bg);color:var(--offwhite);padding:44px 0 60px;margin-top:36px}
+    .section-title.light{color:var(--offwhite)}
+    .lead.light{color:rgba(255,255,255,0.85)}
+    .contact-cards{display:flex;gap:18px;margin-top:18px}
+    .card.dark{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;color:var(--offwhite)}
+    .contact-list.light a{color:var(--offwhite);text-decoration:none}
+    .btn-cta{display:inline-block;padding:12px 18px;border-radius:8px;border:none;background:linear-gradient(90deg,var(--sage),var(--blush));color:white;font-weight:700;text-decoration:none}
+    .footer-note{padding:18px 0;text-align:center;color:rgba(255,255,255,0.6);background:transparent}
+    .small.muted{color:rgba(255,255,255,0.6);font-size:13px}
+    a{color:var(--sage)}
+    @media(max-width:820px){
+      .three-columns{flex-direction:column}
+      .grid-cards{grid-template-columns:1fr}
+      .contact-cards{flex-direction:column}
+    }
   </style>
 </head>
 <body>
   <header class="site-hero">
     <div class="container">
-      <h1 class="logo-heading">Turning Complex Data into Clarity for Global Healthcare.</h1>
+      <h1 class="logo-heading">Turning complex data into clarity for global healthcare</h1>
       <p class="hero-sub">I am a Ph.D.-qualified medical writer, pharmacovigilance specialist, and evidence synthesis consultant with over 10 years of global experience.</p>
       <a class="cta" href="#services">Discover My Expertise</a>
     </div>
@@ -90,146 +95,133 @@
 
   <main>
     <!-- About -->
-    <section id="about" class="container card soft">
-      <h2 class="section-title">About Me</h2>
-      <p class="lead">
-        I am a Ph.D.-qualified consultant delivering scientifically rigorous and accessible outputs. My expertise spans medical writing, pharmacovigilance, regulatory writing, and evidence synthesis — aligned with PRISMA, HTA, and ICH standards. I work with global pharmaceutical and healthcare organisations to transform complex data into clear, impactful insights.
-      </p>
+    <section id="about" class="container card soft" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About me</h2>
+      <p class="lead">I deliver scientifically rigorous and accessible outputs across medical writing, pharmacovigilance, regulatory writing, and evidence synthesis — aligned with PRISMA, HTA, and ICH standards. I work with global pharmaceutical and healthcare organisations to transform complex data into clear, actionable insights.</p>
 
-      <div class="three-columns">
-        <div class="feature">
+      <div class="three-columns" role="list">
+        <div class="feature" role="listitem">
           <div class="icon circle">✓</div>
-          <h4>Scientific Excellence</h4>
+          <h4>Scientific excellence</h4>
           <p>Publication-ready content with regulatory precision and scientific rigour.</p>
         </div>
-        <div class="feature">
+
+        <div class="feature" role="listitem">
           <div class="icon circle">🌍</div>
-          <h4>Global Experience</h4>
+          <h4>Global experience</h4>
           <p>Extensive collaboration with pharmaceutical companies and CROs worldwide.</p>
         </div>
-        <div class="feature">
+
+        <div class="feature" role="listitem">
           <div class="icon circle">🤝</div>
-          <h4>Collaborative Approach</h4>
-          <p>A professional and approachable style, ensuring strong partnerships with every client.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Dr. Stuti Arya -->
-    <section id="meet" class="container">
-      <h2 class="section-title">About Dr. Stuti Arya</h2>
-
-      <div class="profile card soft">
-        <div class="profile-left">
-          <div class="initials">SA</div>
-        </div>
-        <div class="profile-right">
-          <h3>Dr. Stuti Arya</h3>
-          <p class="muted">Ph.D. in Biotechnology, Panjab University</p>
-          <p>I have 10 years of global experience as a medical writer, pharmacovigilance specialist, and evidence synthesis consultant. I am skilled in systematic reviews, HTA submissions, epidemiological summaries, and aggregate safety reports. My work focuses on combining scientific precision with clear communication to support global healthcare decisions.</p>
-
-          <ul class="contact-list">
-            <li><a href="mailto:stutiarya12@gmail.com">✉️ stutiarya12@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/dr-stuti-arya-94598224" target="_blank" rel="noopener">LinkedIn profile</a></li>
-            <li><a href="https://orcid.org/0009-0005-8865-3085" target="_blank" rel="noopener">ORCID: 0009-0005-8865-3085</a></li>
-          </ul>
+          <h4>Collaborative approach</h4>
+          <p>A professional and approachable style, ensuring responsive partnerships with every client.</p>
         </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="container">
-      <h2 class="section-title">Services</h2>
-      <p class="lead">My expertise covers comprehensive scientific communication and regulatory-compliant writing tailored to global pharmaceutical and healthcare organisations.</p>
+    <section id="services" class="container" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="section-title">Services</h2>
+      <p class="lead">I provide comprehensive scientific communication and regulatory-compliant writing tailored to global pharmaceutical and healthcare organisations.</p>
 
-      <div class="grid-cards">
-        <article class="service card soft">
+      <div class="grid-cards" role="list">
+        <article class="service card soft" role="listitem">
           <div class="service-icon">🛡️</div>
           <h4>Pharmacovigilance</h4>
           <p>PBRERs, DSURs, ACOs, aggregate safety reports, signal assessments, and benefit–risk evaluations.</p>
         </article>
 
-        <article class="service card soft">
+        <article class="service card soft" role="listitem">
           <div class="service-icon">✍️</div>
-          <h4>Medical Writing</h4>
+          <h4>Medical writing</h4>
           <p>Manuscripts, abstracts, congress posters, white papers, and clinical/scientific reports with publication strategy support.</p>
         </article>
 
-        <article class="service card soft">
+        <article class="service card soft" role="listitem">
           <div class="service-icon">📄</div>
-          <h4>Regulatory Writing</h4>
+          <h4>Regulatory writing</h4>
           <p>ICH-compliant documents for regulatory submissions, clinical study reports, and protocol development.</p>
         </article>
 
-        <article class="service card soft">
+        <article class="service card soft" role="listitem">
           <div class="service-icon">🔎</div>
-          <h4>Evidence Synthesis</h4>
+          <h4>Evidence synthesis</h4>
           <p>Systematic reviews, targeted/scoping reviews, epidemiological summaries, and literature-based evidence aligned with PRISMA, HTA, and Cochrane standards.</p>
         </article>
       </div>
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="container card soft">
-      <h2 class="section-title">Portfolio Highlights</h2>
+    <section id="portfolio" class="container card soft" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading" class="section-title">Portfolio highlights</h2>
       <p class="lead">Representative examples of my work across systematic reviews, regulatory writing, and pharmacovigilance for healthcare organisations.</p>
 
-      <div class="portfolio-list">
-        <div class="portfolio-item">
+      <div class="portfolio-list" role="list">
+        <div class="portfolio-item" role="listitem">
           <div class="p-icon">📊</div>
           <h4>Economic Burden of Prescription Opioid Abuse</h4>
           <p>Published systematic literature review examining healthcare costs and economic impact across the United States.</p>
           <p class="meta"><strong>Impact:</strong> Value in Health journal publication • <strong>Audience:</strong> healthcare economists, policy makers, pharma</p>
         </div>
 
-        <div class="portfolio-item">
+        <div class="portfolio-item" role="listitem">
           <div class="p-icon">🛡️</div>
-          <h4>Pharmacovigilance Aggregate Reports</h4>
+          <h4>Pharmacovigilance aggregate reports</h4>
           <p>Comprehensive PBRERs and DSURs for leading pharmaceutical companies, ensuring ICH compliance across multiple therapeutic areas.</p>
           <p class="meta"><strong>Audience:</strong> regulatory authorities, pharmaceutical safety teams</p>
         </div>
 
-        <div class="portfolio-item">
+        <div class="portfolio-item" role="listitem">
           <div class="p-icon">📑</div>
-          <h4>Real-World Evidence Report (example)</h4>
-          <p>Evidence synthesis supporting market access for an assistive device in Type 1 diabetes, combining clinical efficacy with quality-of-life outcomes for HTA evaluation.</p>
+          <h4>Real-World Evidence report (example)</h4>
+          <p>Evidence synthesis supporting market access for an assistive device in Type 1 diabetes, combining clinical efficacy and quality-of-life outcomes for HTA evaluation.</p>
           <p class="meta"><strong>Impact:</strong> Market access support • <strong>Audience:</strong> HTA bodies, payers, market access teams</p>
         </div>
 
-        <div class="portfolio-item">
+        <div class="portfolio-item" role="listitem">
           <div class="p-icon">🧭</div>
-          <h4>The Invisible Leaders of Healthcare Evidence</h4>
-          <p>Thought leadership white paper highlighting the critical roles of medical writers and pharmacovigilance experts in shaping healthcare decisions globally.</p>
+          <h4>Thought leadership</h4>
+          <p>White paper highlighting the critical roles of medical writers and pharmacovigilance experts in shaping healthcare evidence and policy.</p>
           <p class="meta"><strong>Impact:</strong> Industry recognition • <strong>Audience:</strong> healthcare leaders, academic institutions</p>
         </div>
       </div>
-
-      <div class="publications">
-        <h5>Selected Publications</h5>
-        <ul>
-          <li>Arya S, Norton N, Kaushik P, Brandtmüller A, Tsoumani E. Recent changes to adult national immunization programs for pneumococcal vaccination in Europe and how they impact coverage: A systematic review of published and grey literature. <em>Human Vaccines & Immunotherapeutics</em>. 2023, 19(3).</li>
-          <li>Arya S, Singh P, Kaur J. et al. Environment dependent expression of mycobacterium hormone sensitive lipases: expression pattern under ex-vivo and individual in-vitro stress conditions in <em>M. tuberculosis H37Ra</em>. <em>Mol Biol Rep</em>. 2022; 49, 4583–4593.</li>
-        </ul>
-      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="site-footer">
+    <!-- Selected Publications -->
+    <section id="publications" class="container publications" aria-labelledby="pub-heading">
+      <h2 id="pub-heading" class="section-title">Selected publications</h2>
+
+      <ul>
+        <li><strong>Arya S, Singh N. (2025).</strong> <em>The Invisible Leaders of Healthcare Evidence.</em> An influential report highlighting the critical, often unrecognized, roles of medical writers, HEOR analysts, and pharmacovigilance experts in shaping healthcare decisions. <span style="color:var(--muted)">[Link available upon request]</span></li>
+
+        <li><strong>Kaushik P, Singh N, Arya S, Nanda S, Grover R. (2024).</strong> Economic burden of prescription opioid abuse in the United States: A Systematic Literature Review. <em>Value in Health</em>, 27(6):S148-9.</li>
+
+        <li><strong>Kaushik P, Arya S, Singh N, Afaque A, Nanda S, Grover R, Syal K. (2023).</strong> Safety and quality of life of various artificial pancreas systems in patients with type 1 diabetes mellitus: A systematic review of Real-World Evidence. <em>Value in Health</em>, 26(12):S491.</li>
+
+        <li><strong>Arya S, Norton N, Kaushik P, Brandtmüller A, Tsoumani E. (2023).</strong> Recent changes to adult national immunization programs for pneumococcal vaccination in Europe and how they impact coverage: A systematic review of published and grey literature. <em>Human Vaccines & Immunotherapeutics</em>, 19(3).</li>
+
+        <li><strong>Arya S, Singh P, Kaur J. et al. (2022).</strong> Environment dependent expression of mycobacterium hormone sensitive lipases: expression pattern under ex-vivo and individual in-vitro stress conditions in <em>M. tuberculosis H37Ra</em>. <em>Molecular Biology Reports</em>, 49, 4583–4593.</li>
+      </ul>
+
+      <p class="lead">For a complete list of publications, see my <a href="https://orcid.org/0009-0005-8865-3085" target="_blank" rel="noopener">ORCID profile</a>.</p>
+    </section>
+
+    <!-- Contact (Get In Touch) -->
+    <section id="contact" class="site-footer" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 class="section-title light">Get In Touch</h2>
+        <h2 id="contact-heading" class="section-title light">Get in touch</h2>
         <p class="lead light">Ready to transform complex data into clear, actionable insights? Contact me to discuss your next project.</p>
 
         <div class="contact-cards">
-          <div class="card soft dark">
-            <h4>Dr. Stuti Arya</h4>
-            <ul class="contact-list light">
-              <li><a href="mailto:stutiarya12@gmail.com">✉️ stutiarya12@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/dr-stuti-arya-94598224" target="_blank" rel="noopener">LinkedIn profile</a></li>
-              <li><a href="https://orcid.org/0009-0005-8865-3085" target="_blank" rel="noopener">ORCID: 0009-0005-8865-3085</a></li>
+          <div class="card soft dark" style="max-width:640px;">
+            <h4 style="margin:0 0 12px;color:var(--offwhite)">Contact</h4>
+            <ul class="contact-list light" style="margin:0;padding:0;">
+              <li style="margin:10px 0;"><a href="mailto:stutiarya12@gmail.com">✉️ stutiarya12@gmail.com</a></li>
+              <li style="margin:10px 0;"><a href="https://www.linkedin.com/in/dr-stuti-arya-94598224" target="_blank" rel="noopener">LinkedIn profile</a></li>
+              <li style="margin:10px 0;"><a href="https://orcid.org/0009-0005-8865-3085" target="_blank" rel="noopener">ORCID: 0009-0005-8865-3085</a></li>
             </ul>
-            <p style="margin-top:15px">
-              <a class="btn-cta" href="mailto:stutiarya12@gmail.com">📩 Email Me Directly</a>
-            </p>
+            <p style="margin-top:12px"><a class="btn-cta" href="mailto:stutiarya12@gmail.com">📩 Email me directly</a></p>
           </div>
         </div>
       </div>
@@ -242,8 +234,8 @@
     </div>
   </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
